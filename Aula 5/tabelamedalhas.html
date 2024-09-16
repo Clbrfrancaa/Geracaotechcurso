@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Tabela medalhas</title>
+    <style>
+        tr th,td{
+            border: solid 1px black;
+            padding: 5px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+        #teste{
+            background-color: rgb(233, 233, 233);
+            color: rgb(34, 34, 34);
+        }
+
+        textarea{
+            resize: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption><b>Tabela Medalhas dos Jogos Olímpicos</b></caption></caption>
+        <tr id="teste">
+            <th colspan="2"> Equipe</th>
+            <th> <img src="imagensTabela/ouro.png" alt="medalha de ouro" width="20%"></th>
+            <th> <img src="imagensTabela/prata.png" alt="medalha de prata" width="20%"></th>
+            <th> <img src="imagensTabela/bronze.png" alt="medalha de bronze" width="20%"></th>
+            <th> Total</th>
+        </tr>
+        <tr>
+            <td> <img src="imagensTabela/noruega.jpg" alt="Bandeira Noruega" width = 50%> </td>
+            <td>Noruega</td>
+            <td>16</td>
+            <td>8</td>
+            <td>13</td>
+            <td><b>37</b></td>
+        </tr>
+        <tr>
+            <td> <img src="imagensTabela/roc.jpg" alt="Bandeira ROC" width = 50%> </td>
+            <td>ROC</td>
+            <td>6</td>
+            <td>12</td>
+            <td>14</td>
+            <td><b>32</b></td>
+        </tr>
+        <tr>
+            <td> <img src="imagensTabela/alem.jpg" alt="Bandeira Alemanha" width = 50%> </td>
+            <td>Alemanha</td>
+            <td>12</td>
+            <td>10</td>
+            <td>5</td>
+            <td><b>27</b></td>
+        </tr>
+        <tr>
+            <td> <img src="imagensTabela/canada.jpg" alt="Bandeira Canadá" width = 50%> </td>
+            <td>Canadá</td>
+            <td>4</td>
+            <td>8</td>
+            <td>14</td>
+            <td><b>26</b></td>
+        </tr>
+        <tr>
+            <td> <img src="imagensTabela/EUA.jpg" alt="Bandeira EUA" width = 50%> </td>
+            <td>Estados Unidos da América</td>
+            <td>8</td>
+            <td>10</td>
+            <td>7</td>
+            <td><b>25</b></td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <form>
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" id="nome" required>
+
+        <br><br>
+    
+
+        <label for="email"> Email: </label>
+        <input type="email" name="email" id="email" required>
+
+        <br><br>
+
+        <label for="senha"> Senha: </label>
+        <input type="password" name="senha" id="senha" required>
+
+        <br><br>
+
+        <label for="idade"> Idade: </label>
+        <input type="number" name="idade" id="idade"  min="0" max="80" required>
+
+        <br><br>
+
+        <label for="genero"> Gênero: </label>
+        <br>
+        <label for="genero"> Masculino: </label>
+        <input type="radio" name="genero" id="genero" value="masculino" required>
+        <label for="genero"> Feminino: </label>
+        <input type="radio" name="genero" id="genero" value="feminino" required>
+        <label for="genero"> Outro: </label>
+        <input type="radio" name="genero" id="genero" value="outro" required>
+        
+        <br><br>
+
+        <label for="linguagem"> Selecione suas linguagens de programação</label>
+        <br>
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="js" name="linguagem" value="javascript">
+        <label for="js">Python</label>
+        <input type="checkbox" id="js" name="linguagem" value="python">
+        <br><br>
+
+        <label for="texto">Digite seu comentário</label><br>
+        <textarea name="text" id="texto" name="texto" rows="5" cols="50" maxlength="200"></textarea>
+        <br><br>
+
+        <label for="cidade"> Cidade pretendida</label>
+        <select id="cidades" name="cidade"> 
+            <option value="">--Selecione uma cidade--</option>
+            <option value="">Fortaleza</option>
+            <option value="">Natal</option>
+            <option value="">João Pessoa</option>
+        </select>
+
+        <div>
+            <br>
+            <input type="submit" value="Enviar essa bagaça">
+        </div>
+
+    </form>
+    
+</body>
+</html>

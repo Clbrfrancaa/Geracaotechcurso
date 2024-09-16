@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Candidatura</title>
+</head>
+<body>
+    <table>
+        <h1>Formulário de Candidatura</h1>
+        <form>
+            <label for="nome"><b>Digite seu nome:</b></label>
+            <input type="text" name="nome" id="nome" required>
+            <br><br>
+            <label for="email"><b>Digite seu email:</b></label>
+            <input type="email" name="email" id="email"required>
+            <br><br>
+
+            <label for="cargo"><b>Cargo de Tecnologia:</b></label>
+            <select id="cargo" name="cargo">
+                <option value="desenvolvedor"> Pessoa Desenvolvedora</option>
+                <option value="designer"> Designer</option>
+            </select>
+            <br><br>
+
+            <label for="genero"><b>Gênero</b></label>
+            <br>
+
+            <label for="genero">Masculino</label>
+            <input type="radio" name="genero" id="genero" value="masculino">
+
+            <label for="genero">Feminino</label>
+            <input type="radio" name="genero" id="genero" value="feminino">
+
+            
+            <label for="genero">Outro</label>
+            <input type="radio" name="genero" id="genero" value="masculino">
+
+            <br><br>
+
+            <label for="unidade"><b>Unidade de Interesse:</b></label>
+            <label for="unidade">Fortaleza</label>
+            <input type="checkbox" id="unidade" name="unidade" value="Fortaleza">
+
+            <label for="unidade">Caucaia</label>
+            <input type="checkbox" id="unidade" name="unidade" value="Caucaia">
+
+            <label for="unidade">Eusebio</label>
+            <input type="checkbox" id="unidade" name="unidade" value="Eusebio">
+            <br><br>
+
+            <label for="cometario">Fale mais sobre você:</label><br>
+            <textarea type="text" id="comentario" name="comentario" rows="2" cols="50" maxlength="200"></textarea>
+        <div>
+            <input type="submit" value="Enviar respostas">
+        </div>
+        </form>
+    </table>
+</body>
+</html>

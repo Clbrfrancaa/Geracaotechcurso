@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de tabela</title>
+
+    <style>
+
+        tr th, td{
+             border: solid 2px red;
+
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <table>
+        <caption>Titulo da tabela</caption>
+        <colgroup> <!-- Aplica css nas colunas -->
+            <col style="background-color: brown;">
+        </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Caracteristicas</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Cleber</td>
+            <td>Idade: 23</td>
+            <td rowspan="2">Fortaleza</td>
+        </tr>
+        <tr>
+            <td>Altura: 1,85cm </td>
+        </tr>
+        <tr>
+            <td colspan="3">Mica</td>
+            
+        </tr>
+
+
+
+    </table>
+
+
+
+
+    
+</body>
+</html>
