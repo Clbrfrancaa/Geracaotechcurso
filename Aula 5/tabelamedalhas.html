@@ -28,14 +28,28 @@
 </head>
 <body>
     <table>
-        <caption><b>Tabela Medalhas dos Jogos Olímpicos</b></caption></caption>
+        <caption><b>Tabela Medalhas dos Jogos Olímpicos</b></caption>
+        <colgroup> <col style=""> </colgroup>
+        <colgroup> <col style=""> </colgroup>
+        <colgroup> <col style="background-color: rgb(252, 227, 0);"> </colgroup>
+        <colgroup> <col style="background-color: rgb(207, 207, 207);"> </colgroup>
+        <colgroup> <col style="background-color: rgb(104, 63, 2);"> </colgroup>
+
+        </tr>
         <tr id="teste">
-            <th colspan="2"> Equipe</th>
+            <th colspan="2" rowspan="2"> Equipe</th>
+            <th colspan="3"> Medalhas </th>
+            <th rowspan="2"> Total</th>
+        </tr>
+
+        <tr>
             <th> <img src="imagensTabela/ouro.png" alt="medalha de ouro" width="20%"></th>
             <th> <img src="imagensTabela/prata.png" alt="medalha de prata" width="20%"></th>
             <th> <img src="imagensTabela/bronze.png" alt="medalha de bronze" width="20%"></th>
-            <th> Total</th>
+
         </tr>
+
+
         <tr>
             <td> <img src="imagensTabela/noruega.jpg" alt="Bandeira Noruega" width = 50%> </td>
             <td>Noruega</td>
@@ -79,7 +93,7 @@
 
     </table>
 
-    <hr>
+    <hr><br><br>
 
     <form>
         <label for="nome"> Nome: </label>
