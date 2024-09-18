@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: black;
+    margin: 0px;
+    padding: opx;
+}
+
+header{
+    background-color: brown;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+header p{
+    margin: 16px;
+}
+
+article{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 420px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+article p{
+    text-align: justify;
+    padding: 0px 15px;
+}
+
+footer{
+    background-color: rgb(36, 0, 0);
+    color: antiquewhite;
+    height: 80px;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 30px;
+}
+
+
+#primeiracaixa{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    
+}
+
+#primeiracaixa > h2 {
+    border-radius: 10px 10px 0px 0px;
+    background-color: brown;
+    color: antiquewhite;
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 10px;
+    width: auto;
+    height: 40px;
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+a:hover{
+    background-color: antiquewhite;
+    color: brown;
+    border-radius: 5px;
+}
+
+
+.index{
+    background-color: rgb(36, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#primeiracaixa:hover{
+    width: 600px;
+    transition: 1s;
+}
+
+
+@media (max-width:600px){
+    header{ background-color: black;
+            color: white;
+    }
+
+
+}
