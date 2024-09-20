@@ -1,0 +1,44 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+    padding: 0px;
+    margin:0px;
+}
+header{
+    background-image: url(imagens/fundotitulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 250px;
+    text-align: center;
+
+}
+
+header h1{
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+header nav {
+    text-align: right;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+#butao{
+    background-color: rgb(47, 2, 2);
+    color: aliceblue;
+    border-radius: 6px;
+    border-color: transparent;
+     
+}
+    
+
