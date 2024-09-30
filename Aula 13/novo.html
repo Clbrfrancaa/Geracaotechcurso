@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,157 +22,157 @@
         let x = "Maria"
 
 
-        console.log("Olá "+ x)
+        console.log("Olá " + x)
         console.log(pi)
+
+
+        //Operadores Ariritméticos
+        /* 
+            Soma +
+            Subtração -
+            Multiplicação *
+            Divisão: /
+            Módulo (Resto da divisão) %
+            Incremento ++
+            Decremento --
+    
+        */
+
+        x = 20
+        let y = 15
+
+        let soma = x + y
+        console.log("Soma = " + soma)
+        let sub = x - y
+        console.log("Subtração = " + sub)
+        let mult = x * y
+        console.log("Multiplicação = " + mult)
+        let div = x / y
+        console.log("Divisão = " + div.toFixed(2))
+        let mod = x % y
+        console.log("Módulo " + mod)
+
+        x++
+        console.log("Encremento " + x)
+
+        y--
+        console.log("Decremento " + y)
+
+        //Operadores Atribuição e Operação
+        /* 
+            Soma +=
+            Subtração -=
+            Multiplicação *=
+            Divisão: /=
+            Módulo (Resto da divisão) %=
+        */
+
+        x += 4 // x = x + 4
+        console.log(x)
+
+        x -= 10 // x = x - 4
+        console.log(x)
+
+        x *= 3 // x = x * 3
+        console.log(x)
+
+        x /= 5 // x = x / 3
+        console.log(x)
+
+        x %= 2 // x = x % 2
+        console.log(x)
+
+
+        /*
+        Operadores lógicos - Verdadeiro ou Falso -> bool
+        && - e
+        || - ou
+        ! - not
+        == - igual
+        === - identico
+        != - diferente
+        > - maior que 
+        < - menor que
+        >= - maior ou igual
+        <= - menor ou igual
+    
+    
+    
+        */
+
+        let a = false
+        let b = false
+        let t = 10
+        let u = 4
+
+        console.log(a && b)
+        console.log(a || b)
+        console.log(!a)
+        console.log("O t é igual ao u? " + (t == u))
+        console.log("O t é diferente do u? " + (t != u))
+        console.log("O t é maior que u? " + (t > u))
+        console.log("O t é menor que u? " + (t < u))
+        console.log("O t é maior ou igual que u? " + (t >= u))
+        console.log("O t é maior ou igual que u? " + (t <= u))
+        /*
+            let numero = parseInt (prompt ("Digite um número:"))
+            console.log(numero)
         
+            let numero2 = parseInt (prompt ("DIgite outro número: "))
+            console.log(numero2)
+        
+            console.log(numero + numero2)
+        */
 
-    //Operadores Ariritméticos
-    /* 
-        Soma +
-        Subtração -
-        Multiplicação *
-        Divisão: /
-        Módulo (Resto da divisão) %
-        Incremento ++
-        Decremento --
-
-    */
-
-    x = 20
-    let y = 15
-
-    let soma = x + y
-    console.log("Soma = " + soma)
-    let sub = x - y
-    console.log("Subtração = " + sub)
-    let mult = x * y
-    console.log("Multiplicação = " + mult)
-    let div = x / y
-    console.log("Divisão = " + div.toFixed(2))
-    let mod = x % y
-    console.log("Módulo " + mod)
-
-    x++
-    console.log("Encremento " + x)
-
-    y--
-    console.log("Decremento " + y)
-
- //Operadores Atribuição e Operação
-    /* 
-        Soma +=
-        Subtração -=
-        Multiplicação *=
-        Divisão: /=
-        Módulo (Resto da divisão) %=
-    */
-
-    x+=4 // x = x + 4
-    console.log(x)
-
-    x-=10 // x = x - 4
-    console.log(x)
-
-    x*=3 // x = x * 3
-    console.log(x)
-
-    x/=5 // x = x / 3
-    console.log(x)
-
-    x%=2 // x = x % 2
-    console.log(x)
-
-
-    /*
-    Operadores lógicos - Verdadeiro ou Falso -> bool
-    && - e
-    || - ou
-    ! - not
-    == - igual
-    === - identico
-    != - diferente
-    > - maior que 
-    < - menor que
-    >= - maior ou igual
-    <= - menor ou igual
-
-
-
-    */
-
-    let a = false
-    let b = false
-    let t = 10
-    let u = 4
-
-    console.log(a && b)
-    console.log(a || b)
-    console.log(!a)
-    console.log("O t é igual ao u? " + (t == u))
-    console.log("O t é diferente do u? " +  (t != u))
-    console.log("O t é maior que u? " + (t > u))
-    console.log("O t é menor que u? " + (t < u))
-    console.log("O t é maior ou igual que u? " + (t >= u))
-    console.log("O t é maior ou igual que u? " + (t <= u))
-/*
-    let numero = parseInt (prompt ("Digite um número:"))
-    console.log(numero)
-
-    let numero2 = parseInt (prompt ("DIgite outro número: "))
-    console.log(numero2)
-
-    console.log(numero + numero2)
-*/
-
- /* Atividade 1
-
-    let num1 = parseFloat (prompt ("Digite seu número: "))
-    let num2 = parseFloat (prompt ("Digite seu número: "))
-    let somando = (num1 + num2)
-    console.log("O resultado da sua soma é: " + somando)
-    confirm ("O resultado da sua soma é: " + somando)
-
-
-
-    let salario = parseFloat (prompt ("Quanto tu recebe man?!"))
-    let novosalario = (salario + salario * (20/100))
-    console.log("Teu novo salário man é: " + novosalario)
-    confirm ("Teu novo salário man é: " + novosalario)
-
-    let nota1 = parseFloat (prompt ("Primeira nota: "))
-    let nota2 = parseFloat (prompt ("Segunda nota: "))
-    let nota3 = parseFloat (prompt ("Terceira nota: "))
-    let media = ((nota1 + nota2 + nota3) / 3 )
-    console.log("Sua média é de: " + media)
-    confirm ("Sua média é de: " + media)
-
-    let lado = parseFloat (prompt("Digite o lado do quadrado: "))
-    let area = (lado * lado)
-    console.log("A área do Quadrado é " + area)
-    confirm ("A área do Quadrado é " + area)
-
-    let base = parseFloat (prompt("Digite a base do triângulo: "))
-    let altura = parseFloat (prompt("Digite a altura do triângulo: "))
-    let areaTrian = ((base * altura) / 2)
-    console.log("A área do Triângulo é " + areaTrian)
-    confirm ("A área do Triângulo é " + areaTrian)
-
-    alert("Obrigado por responder!")
-
-    */
-    /*
-    let idade = parseInt (prompt("Digite sua idade: "))
-    let carteira = confirm("Tem carteira?")
-
-    if(idade >= 18 && carteira == true){
-        console.log("Pode dirigir")
-    } else {
-        console.log("Entrou no Else")
-
-    }
-    console.log("Fim do código")
-
-    */
+        /* Atividade 1
+       
+           let num1 = parseFloat (prompt ("Digite seu número: "))
+           let num2 = parseFloat (prompt ("Digite seu número: "))
+           let somando = (num1 + num2)
+           console.log("O resultado da sua soma é: " + somando)
+           confirm ("O resultado da sua soma é: " + somando)
+       
+       
+       
+           let salario = parseFloat (prompt ("Quanto tu recebe man?!"))
+           let novosalario = (salario + salario * (20/100))
+           console.log("Teu novo salário man é: " + novosalario)
+           confirm ("Teu novo salário man é: " + novosalario)
+       
+           let nota1 = parseFloat (prompt ("Primeira nota: "))
+           let nota2 = parseFloat (prompt ("Segunda nota: "))
+           let nota3 = parseFloat (prompt ("Terceira nota: "))
+           let media = ((nota1 + nota2 + nota3) / 3 )
+           console.log("Sua média é de: " + media)
+           confirm ("Sua média é de: " + media)
+       
+           let lado = parseFloat (prompt("Digite o lado do quadrado: "))
+           let area = (lado * lado)
+           console.log("A área do Quadrado é " + area)
+           confirm ("A área do Quadrado é " + area)
+       
+           let base = parseFloat (prompt("Digite a base do triângulo: "))
+           let altura = parseFloat (prompt("Digite a altura do triângulo: "))
+           let areaTrian = ((base * altura) / 2)
+           console.log("A área do Triângulo é " + areaTrian)
+           confirm ("A área do Triângulo é " + areaTrian)
+       
+           alert("Obrigado por responder!")
+       
+           */
+        /*
+        let idade = parseInt (prompt("Digite sua idade: "))
+        let carteira = confirm("Tem carteira?")
+    
+        if(idade >= 18 && carteira == true){
+            console.log("Pode dirigir")
+        } else {
+            console.log("Entrou no Else")
+    
+        }
+        console.log("Fim do código")
+    
+        */
 
         /*
     let nota1 = parseFloat (prompt ("Primeira nota: "))
@@ -189,90 +190,154 @@
         alert("Reprovado")
     }
         */
-/*
-    let numNeg = parseInt(prompt("Digite um número"))
-    if(numNeg < 0){
-        alert("Seu número é negativo")
-    }else{
-        alert("Seu número é positivo")
-    }
-
-    let numerox = parseInt(prompt("Coloca um número aí"))
-    if(numerox > 10){
-        alert("Seu número é maior que 10")
-    }else if(numerox < 10){
-        alert("Seu número é menor que 10")
-    }
-
-    let idade1 = parseInt(prompt("Qual sua idade?"))
-    if(idade1 >= 18){
-        alert("Pode votar")
-    }else{
-        alert("Não pode votar")
-    }
-
-    let restoDiv = parseInt(prompt("Qual número você quer dividir"))
-    if((restoDiv % 2) == 0){
-        alert("Par")
-    }else{
-        alert("Ímpar")
-    }
-*/
-
-/* ESSA FOI UMA TENTATIVA FALHA DE CONVERTER STRING EM BOOLEAN
-
-    let dirijo = parseInt (prompt("Quer saber se pode dirigir? diz a idade"))
-    
-    if(dirijo >= 18){
-        let carteira = (prompt("Tu tem carteira man?")) 
-        let carteiraBoolean = carteira === Sim
+        /*
+            let numNeg = parseInt(prompt("Digite um número"))
+            if(numNeg < 0){
+                alert("Seu número é negativo")
+            }else if(numNeg == 0){
+                alert("Seu número é zero")
+            }else{
+                alert("Seu número é positivo")
+            }
         
-    }else{
-        alert("Pode não man!")
-    }
+            let numerox = parseInt(prompt("Coloca um número aí"))
+            if(numerox > 10){
+                alert("Seu número é maior que 10")
+            }else if(numerox <= 10){
+                alert("Seu número é menor que 10")
+            }
+        
+            let idade1 = parseInt(prompt("Qual sua idade?"))
+            if(idade1 >= 18){
+                alert("Pode votar")
+            }else{
+                alert("Não pode votar")
+            }
+        
+            let restoDiv = parseInt(prompt("Qual número você quer dividir"))
+            if((restoDiv % 2) == 0){
+                alert("Par")
+            }else{
+                alert("Ímpar")
+            }
+        */
 
-    if(carteira == true){
-        alert("Beleza, tu pode dirigir")
+        /*ESSA FOI UMA TENTATIVA FALHA DE CONVERTER STRING EM BOOLEAN
+        
+            let dirijo = parseInt (prompt("Quer saber se pode dirigir? diz a idade"))
+            
+            if(dirijo >= 18){
+                let carteira = (prompt("Tu tem carteira man?"))  
+                if(carteira == "sim"){
+                alert("Pode dirigir")
+                }else{
+                    alert("Pode não man!")
+                }
+                   
+                }else{
+                    alert("Pode não man!")
+                }
+        */
+        /*
+         let idade = parseInt (prompt("Digite sua idade: "))
+            let carteira = confirm("Tem carteira?")
+        
+            if(idade >= 18 && carteira == true){
+                alert("Pode dirigir")
+            } else {
+                alert("Não pode dirigir")
+            }
+            
+        */
 
-    }else{
-        alert("Pode não man")
+        /*Questão 7: Escreva um código que verifica se um número é divisível por 5 e por 3 ao mesmo tempo.*/
+        /*
+            let modulo = parseInt (prompt("Quer saber se é divisivel por 5 e por 3?"))
+            if(modulo % 5 == 0 && modulo % 3 == 0){
+                alert("é divisivel por 3 e 5")
+        
+            }else {
+                alert("Não é divisivel por 3 e 5")
+            }
+        
+        */
 
-    }
-*/
-
-/*
- let idade = parseInt (prompt("Digite sua idade: "))
-    let carteira = confirm("Tem carteira?")
-
-    if(idade >= 18 && carteira == true){
-        alert("Pode dirigir")
-    } else {
-        alert("Não pode dirigir")
-    }
-    
-*/
-
-/*Questão 7: Escreva um código que verifica se um número é divisível por 5 e por 3 ao mesmo tempo.*/
-
-    let modulo = parseInt (prompt("Quer saber se é divisivel por 3?"))
-    if(modulo % 5 == 0 && modulo % 3 == 0){
-        alert("é divisivel por 3 e 5")
-
-    }else {
-
-        alert("Não é divisivel por 3 e 5")
-    }
+        /*let nota11 = parseFloat(prompt("nota 1"))
+        let nota12 = parseFloat(prompt("nota 2"))
+        let nota13 = parseFloat(prompt("nota 3"))
+        let mediaFinal = ((nota11 + nota12 + nota13) / 3 )
+        */
 
 
-    
+        /*
+        let numA = parseFloat(prompt("Digite um número"));
+        let numB = parseFloat(prompt("Digite um número"));
+        let somaTotal = (numA + numB)
+        if(somaTotal > 10){
+            alert("Sua soma é maior que 10")
+        
+        }else{
+            alert("Sua soma é menor ou igual que 10")
+        }
+        */
+
+        /*
+        let peso = parseFloat(prompt("Digite seu peso"))
+        let altura = parseFloat(prompt("Digite sua altura"))
+        let imc = (peso / (altura * altura))
+        if (imc < 20) {
+            alert("Abaixo do peso")
+        } else if (imc == 20 && imc <= 25) {
+            alert("Peso normal")
+        } else if (imc > 25 && imc <= 30) {
+            alert("Sobre Peso")
+        } else if (imc > 30 && imc <= 40) {
+            alert("Obeso")
+        } else if (imc > 40) {
+            alert("Obeso Mórbido")
+        }
+        */
+
+        let saldoMed = parseFloat(prompt("Digite seu saldo médio"))
+        saldoMed.toFixed(2)
+        
+
+        if(saldoMed >= 0 && saldoMed <= 500){
+            alert("Nenhum crédito")
+        }else if (saldoMed > 500 && saldoMed <= 1000){
+            alert("Seu crédito é: " + saldoMed + saldoMed * (30/100))
+        }else if(saldoMed > 1000 && saldoMed <= 3000){
+            alert("Seu crédito é: " + saldoMed + saldoMed * (40/100))
+        }else if(saldoMed > 3000){
+            alert("Seu crédito é: " + saldoMed + saldoMed * (50/100))
+        }
+        
+
+
+        /*
+        let semSaldo = "Sem saldo"
+        let saldo1 = saldoMed + saldoMed * 1.3
+        let saldo2 = saldoMed + saldoMed * 1.4
+        let saldo3 = saldoMed + saldoMed * 1.5
+
+        if(saldoMed >= 0 && saldoMed <= 500){
+            alert("teste")
+        }
+
+        */
+
+
+
 
 
 
     </script>
 
 </head>
+
 <body>
     <h1>JavaScript</h1>
-    
+
 </body>
+
 </html>
