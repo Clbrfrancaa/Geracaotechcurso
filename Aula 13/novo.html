@@ -465,7 +465,7 @@
         alert(menor)  
         
         */
-        
+
 
         /*
 
@@ -519,16 +519,149 @@
 
         */
 
-        let numero = parseInt(prompt("Insira o número"))
+        /*
 
-        while(numero % 2 != 0){
+        3 - Crie um programa que, utilizando um laço while, peça ao usuário para inserir números até que o total de 5 números pares tenha sido coletado, e exiba esses números.
+
+        let cont = 0
+        let numero = parseInt(prompt("Insira o número"))
+        
+        while(cont < 5){
             numero = parseInt(prompt("Insira outro número"))
+            if(numero % 2 == 0){
+                cont++
+                console.log(numero)
+
+            }
         }
+
+        */
+
+        /* 
+         4- Crie um programa que, utilizando um laço while, peça ao usuário para inserir uma senha correta (definida previamente) e só permita o encerramento quando o usuário acertar a senha.
+       
+        let senha = "clebao"
+        let senhaNova = prompt("Digite a senha")
+
+        while(senhaNova != senha){
+            senhaNova = prompt("Digite a senha")
+        }
+        
+        */
+
+        /*5 - Crie um programa que, utilizando um laço while, peça ao usuário para digitar 10 números e exiba quantos desses números são primos.
+
+        let i = 1
+        let numero = 0
+        let primos = 0
+        while (i <= 10) {
+            numero = parseInt(prompt("Digite o número"))
+
+            let a = 1
+            let cont = 0
+            while (a <= numero) {
+                if (numero % a == 0) {
+                    cont++
+                }
+                a++
+            }
+            if (cont == 2) {
+                console.log(numero + " é primo!")
+                primos++
+            }
+            i++
+        }
+        console.log("Você digitou " +primos+ " números Primos")
+        */
+
+        /*
+        let senha = "pass123";
+        let senhaDigitada = prompt("Digite sua senha");
+        while(senha != senhaDigitada){
+            senhaDigitada = prompt("Senha incorreta, digite novamente");
+        }
+
+        */
+        /*1 - Crie um programa que, utilizando um laço do...while, exiba os números de 1 a 10 no console.
+        let i = 1
+        do{
+            document.write(i+"<br>")
+            i++
+        }while(i <= 10){
+        }
+        */
+
+        /*
+        3 - Crie um programa que, utilizando um laço do...while, peça ao usuário para digitar um número positivo, repetindo a solicitação até que um valor positivo seja inserido.
+        let numero = 0
+        do{
+            numero=parseInt(prompt("Digite um número"))
+        }while(numero <= 0);
+        */
+        /*
+                let somando = 0
+                let numeroDigitado = 0
+                do{
+                    numeroDigitado = parseInt(prompt("DIgite um número"))
+                    somando += numeroDigitado
+        
+                }while(somando <= 100)
+        
+                alert("A soma é " + soma);
+        */
+
+
+
+        /* 4 - Crie um programa que, utilizando um laço do...while, peça ao usuário para inserir números e calcule a média desses números. O programa deve parar quando o usuário inserir 0.
+
+        let numeroDig = 0
+        let media = 0
+        let cont = 0
+        let c = 0
+
+        do {
+            numeroDig = parseFloat(prompt("Digite um número"))
+            c += numeroDig
+            cont++
+            if (numeroDig == 0) {
+                media = c / (cont - 1)
+            }
+
+        } while (numeroDig != 0)
+        alert("A média é: " + media.toFixed(2))
+
+        */
+
+        /* 5 - Crie um programa que, utilizando um laço do...while, peça ao usuário para inserir números até que ele insira 5 números ímpares consecutivos. Ao final, exiba esses números.*/
+
+        let numeroDig = 0
+        let cont = 0
+        let numeroImpares = []
+
+        do{
+            numeroDig = parseInt(prompt("Digita um número"))
+            if(numeroDig % 2 == 1){
+                cont++
+                numeroImpares[cont] = numeroDig
+            }else{
+                cont = 0
+             }
+            }
+        while(cont != 5)
+        alert("Você digitou 5 números ímpares consecultivamente\nSão eles: " + numeroImpares)
 
         
 
+        //Array
 
+        let frutas = []
+        for(let i = 0 ; i < 3; i++){
+            frutas[i] = prompt("Digita uma fruta")
+        }
 
+        alert(frutas)
+            
+        
 
     </script>
 
