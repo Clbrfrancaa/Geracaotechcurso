@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 21</title>
+    <script src="funcoes.js"></script>
+    <script>
+
+        // let idade = parseInt(prompt('Digite sua idade'));
+        // alert(classificador(idade));
+
+        // let numero = parseInt(prompt('digite um número'))
+        // alert(verificadorPositivo(numero))
+
+        // let controle = 0
+        // let tarefas = []
+
+        // while(controle != "sair"){
+        //     controle = prompt("Você quer adicionar, remover ou sair")
+
+        //     if(controle == "adicionar"){
+        //         adicionaTarefa(tarefas)
+        //     }else if(controle == "remover"){
+        //         removeTarefa(tarefas)
+        //     }
+        // }
+
+        // alert(tarefas)
+
+
+        //eventos
+
+        function clicouAzul(){
+            alert('Você clicou  no Azul')
+        }
+        function clicouAmarelo(){
+            alert('Você deu um duplo click no Amarelo')
+        }
+        function clicouVerde(){
+            alert('Você passou o mouse no Verde ')
+        }
+        function clicouPreto(){
+            alert('Mouse saiu ')
+        }
+
+        function funcao1(){
+            alert("A tecla foi pressionada")
+        }
+
+        function funcao2(){
+            alert("A tecla foi pressionada")
+        }
+
+        function funcao3(){
+            alert("A tecla foi chamada")
+        }
+
+
+      </script>
+</head>
+<body>
+    
+    <div onclick="clicouAzul()"
+     style="background-color: blue; width: 150px; height: 150px">
+    </div>
+    <div ondblclick="clicouAmarelo()"
+     style="background-color: rgb(255, 251, 0); width: 150px; height: 150px">
+    </div>
+    <div onmouseover="clicouVerde()"
+     style="background-color: rgb(0, 255, 106); width: 150px; height: 150px">
+    </div>
+    <div onmouseout="clicouPreto()"
+     style="background-color: rgb(0, 0, 0); width: 150px; height: 150px">
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <h1>Eventos de teclado</h1>
+
+    <input onkeydown="funcao1()" type="text">
+    <input onkeypress="funcao2()" type="text">
+    <input onkeyup="funcao3()" type="text">
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>
