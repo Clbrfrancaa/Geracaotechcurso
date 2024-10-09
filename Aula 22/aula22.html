@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22</title>
+    <script>
+        //Eventos de janela
+        //onresize -> Mudança do tamanho da tela
+        //onscroll -> Scroll do mouse
+
+        function mudouTela(){
+           console.log("a tela mudou de tamanho")
+        }
+        function scroll(){
+           console.log("Você mexeu o scroll")
+        }
+    
+        //Eventos de formulário
+        //onfocus -> Quando um campo ganha foco
+
+        function inputFoco(){
+            console.log("Input em foco")
+        }
+
+        //onblur -> Quando um campo perde o foco
+
+        function perdeuFoco(){
+            console.log("Input perdeu foco")
+        }
+
+        //onchange -> Quando acontece uma mudança de valor
+
+        function mudouValor(){
+            console.log("Input mudou valor")
+        }
+
+    </script>
+</head>
+<body onresize="mudouTela()" onscroll="scroll()">
+    <br><br><br><br>
+    
+    <input type="text" onfocus="inputFoco()" onblur="perdeuFoco()" onchange="mudouValor()">
+
+    <select name="" id="" onchange="mudouValor()">
+        <option value="">--Selecione uma opção--</option>
+        <option value="op1">Opção 1</option>
+        <option value="op2">Opção 2</option>
+        <option value="op3">Opção 3</option>
+    </select>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    
+</body>
+</html>

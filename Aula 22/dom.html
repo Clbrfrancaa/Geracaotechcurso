@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+</head>
+<body>
+    <h1>Seleção de alimentos</h1>
+
+    <h3>document.getElementById("id do Elemento")</h3>
+
+    <div id="div1" class="divs">
+
+        <p id="paragrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus fugiat, delectus magnam suscipit repellat itaque pariatur animi soluta sint eum? Libero, consequuntur id saepe assumenda soluta ut perferendis perspiciatis?</p><br>
+
+        <p id="paragrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus fugiat, delectus magnam suscipit repellat itaque pariatur animi soluta sint eum? Libero, consequuntur id saepe assumenda soluta ut perferendis perspiciatis?</p><br>
+
+        <p id="paragrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus fugiat, delectus magnam suscipit repellat itaque pariatur animi soluta sint eum? Libero, consequuntur id saepe assumenda soluta ut perferendis perspiciatis?</p><br>
+
+    </div>
+
+    <h1>Titulo 1</h1>
+    <h1>Titulo 2</h1>
+    <h1>Titulo 3</h1>
+
+    <input id="nome" type="text" name="nome" placeholder="Digite seu nome">
+    <input type="submit" onclick="capturaNome()">
+    <br>
+    <input id="senha" type="password" name="nome" placeholder="Digite sua senha">
+    <br>
+    <input id="email" type="email" name="nome" placeholder="Digite seu email">
+    <br>
+
+</body>
+
+<script>
+    // let div = document.getElementById("div1")
+    // console.log(div)
+
+    //Selecionando elementos por Tags
+
+    let titulos = document.getElementsByTagName("h1")
+    console.log(titulos)
+
+    let paragrafos = document.getElementsByTagName("p")
+    console.log(paragrafos)
+
+    let divs = document.getElementsByTagName("div")
+    console.log(divs)
+
+    //Selecionando elementos por Class
+
+    let paragrafosIniciais = document.getElementsByClassName('paragrafoInicial')
+    console.log(paragrafosIniciais)
+
+     //Selecionando elementos pelo nome
+
+     let inputsNome = document.getElementsByName("nome")
+    console.log(inputsNome)
+
+    //Selecionando elementos pelo Id
+
+    let divParagrafos = document.getElementById("div1")
+    console.log(divParagrafos)
+
+    //Manipulando os valores do DOM
+
+    //Manipulando os valores do inputs
+
+    function capturaNome(){
+
+        let nome = document.getElementById("nome").value
+        let inputNome = document.getElementById("nome")
+        console.log(nome)
+        inputNome.value = ""
+        inputNome.disabled = 'Disabled'
+
+        let inputEmail = document.getElementById("email")
+        inputEmail.value = nome
+
+
+
+    
+    }
+
+        
+
+</script>
+</html>

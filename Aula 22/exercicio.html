@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Exercicio</h1>
+        <input id="nome1"  type="text" placeholder="Digite seu nome">
+        <input type="submit" onclick="trocaNome()">
+        <br><br>
+        <input id="nome2" type="text" placeholder="Seu nome vem pra cá">
+        
+
+    </main>
+    <footer></footer>    
+</body>
+
+<script>
+    function trocaNome(){
+        let nome = document.getElementById("nome1")
+        console.log(nome.value)
+        let nome2 = document.getElementById("nome2")
+        console.log(nome2.value)
+        let troca = ""
+
+        troca = nome.value
+        nome.value = nome2.value
+        nome2.value = troca
+
+    }
+
+
+</script>
+</html>
