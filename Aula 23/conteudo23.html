@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .megaMan{
+            border: solid 5px blue;
+        }
+
+        .mario{
+            border: solid 5px red
+        }
+
+        .xuxu{
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            background-color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>Valor dos inputs -> .value</h3>
+    <h3>Conteudo do HTML de uma tag -> .innerHTML -> processa o código HTML</h3>
+    <h3>Conteudo textual de uma tag -> .textContent -> não processa codigos</h3>
+    <h3>Manipulação de atributos -> .setAttribute("atributo","valor")</h3>
+    <h3>Acessar  atributos -> .getAttribute("atributo")</h3>
+
+    <p onclick="verificarParagrafo()" id="paragrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet velit beatae minus similique corrupti culpa eos quaerat ut! Explicabo incidunt quod expedita doloremque accusamus error eveniet doloribus odio, corporis nihil.</p>
+
+    <p onclick="verificarParagrafo()" id="paragrafo2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet velit beatae minus similique corrupti culpa eos quaerat ut! Explicabo incidunt quod expedita doloremque accusamus error eveniet doloribus odio, corporis nihil.</p>
+
+    <img class="megaMan" onclick="clicou()" id="imagemJogo" src="https://s2-techtudo.glbimg.com/xTAzyy52W2Ek9zd2jubQsr7PR3g=/0x0:695x505/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/A/B/pipNqqRKutA7AWqA3prA/2014-09-29-megama-x-capa.jpg" alt="" width="200px">
+
+    <button id="botao" onclick="removerAtributo()">Remover</button>
+    <button id="botao2" onclick="adicionarClasse()">Adicionar xuxu</button>
+    <button id="botao3" onclick="removerClasse()">Remover xuxu</button>
+    <button id="botao4" onclick="alternarClasse()">Alternar xuxu</button>
+    <button id="botao5" onclick="verificarClasse()">Verificar xuxu</button>
+
+
+
+
+
+    <h2>Manipulação de Estilo</h2>
+    <h3>Modificação de classe</h3>
+    <ul>
+        <li>Adicionar .classList.add('Classe')</li>
+        <li>Remover .classList.remove('Classe')</li>
+        <li>Trocar .classList.toggle('Classe')</li>
+        <li>Verificar a classe .classList.contains('Classe')</li>
+    </ul>
+
+
+
+    
+</body>
+
+<script>
+    function verificarParagrafo(){
+        let paragrafo1 = document.getElementById('paragrafo1')
+        let paragrafo2 = document.getElementById('paragrafo2')
+
+        console.log(paragrafo1.innerHTML)
+        paragrafo1.innerHTML = '<h1>Aqui foi um paragrafo</h1>'
+
+        console.log(paragrafo2.textContent)
+        paragrafo2.textContent = '<h1>Aqui foi um paragrafo</h1>'
+    }
+
+    let imagem = document.getElementById("imagemJogo")
+    let megaMan = "https://s2-techtudo.glbimg.com/xTAzyy52W2Ek9zd2jubQsr7PR3g=/0x0:695x505/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/A/B/pipNqqRKutA7AWqA3prA/2014-09-29-megama-x-capa.jpg"
+
+    let Mario = "https://i.ytimg.com/vi/IxxZO_fUNqo/maxresdefault.jpg"
+        
+    // OLHAR ISSO DEPOIS
+
+    // function clicou(){
+    //     let imagem = document.getElementById("imagemJogo")
+    //     let megaMan = imagem.getAttribute('src')
+    //     let Mario = "https://i.ytimg.com/vi/IxxZO_fUNqo/maxresdefault.jpg"
+    //     let caixa = [megaMan, Mario]
+        
+
+    //     if(imagem.getAttribute("src") == caixa[0]){
+    //         imagem.setAttribute("src", caixa[1])
+    //     }else{
+    //         imagem.setAttribute("src" , caixa[0])
+    //     }
+
+    //     alert(megaMan)
+    //     imagem.setAttribute("src",Mario)
+    // //    imagem.setAttribute("src",'https://cdn.awsli.com.br/2614/2614028/produto/246277362/super-mario-world_br_a3-9lit9cwq9r.jpg')
+
+    //    let largura = imagem.getAttribute('width')
+    //    alert(largura)
+
+    // }    
+    function clicou(){
+        let imagem = document.getElementById('imagemJogo')
+
+        if(imagem.getAttribute('src') == megaman){
+            imagem.setAttribute('src',mario)
+        }else{
+            imagem.setAttribute('src',megaman)
+        }
+    }
+
+    function removerAtributo (){
+        let imagem = document.getElementById('imagemJogo')
+        let botao = document.getElementById('botao')
+        if(imagem.getAttribute('src') == null){
+
+            imagem.setAttribute('src', megaMan)
+            botao.textContent = 'Remover imagem'
+
+        }else{
+            imagem.removeAttribute('src')
+            botao.textContent = 'Voltar imagem'
+        }
+    }
+
+
+    function adicionarClasse(){
+        let imagem = document.getElementById('imagemJogo')
+        imagem.classList.add('xuxu')
+
+    }
+    
+    function removerClasse(){
+        let imagem = document.getElementById('imagemJogo')
+        imagem.classList.remove('xuxu')
+    }
+
+    function alternarClasse(){
+        let imagem = document.getElementById('imagemJogo')
+        imagem.classList.toggle('mario')
+    }
+
+    function verificarClasse(){
+        let imagem = document.getElementById('imagemJogo')
+        let temClasse = imagem.classList.contains('megaMan')
+        console.log(temClasse)
+    }    
+</script>
+
+</html>

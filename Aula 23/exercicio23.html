@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 23</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <input id="email" type="email" placeholder="Digite seu e-mail"><br><br>
+        <input id="senha" type="password" placeholder="Digite sua senha"><br><br>
+        <input type="submit" onclick="validarCampo()">
+
+        
+    </main>
+    <footer></footer>
+
+    
+</body>
+    <script>
+        
+
+        function validarCampo(){
+            let email1 = document.getElementById("email")
+            console.log(email1.value)
+
+            let senha1 = document.getElementById("senha")
+            console.log(senha1.value)
+
+            if(email1.value == "" && senha1.value == "" ){
+            console.error("Seu campo foi preenchido");
+            alert("Faz de novo")
+            } else if(email1.value == "" && senha1.value != ""){
+                alert("Ainda falta o email")
+            }else if(email1.value != "" && senha1.value == ""){
+                alert("Ainda falta a senha")
+        }
+            email1.value = ""
+            senha1.value = ""
+    }
+
+    //Outra forma de fazer
+        // function validarCampos() {
+        //     let email = document.getElementById('email')
+        //     let senha = document.getElementById('senha')
+        //     if (email.value == '' || senha.value == '') {
+        //         alert('Erro')
+        //     }else{
+        //         alert('campos preenchidos')
+        //     }
+            
+        // }
+
+        
+
+        
+
+    </script>
+</html>
