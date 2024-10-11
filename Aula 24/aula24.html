@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22</title>
+</head>
+<body>
+
+    <div id="caixa">
+        <p>Texto</p>
+    </div>
+
+    <h1>Manipulação de Estrutura dos Elementos</h1>
+
+    <div onclick="adicionaParagrafo()" id="lista" style="width: 150px; height: 300px; border: solid 2px red;">
+        <img id="alladin" src="https://img.youtube.com/vi/G9m2gAuWkOY/maxresdefault.jpg" alt="" width="150px">
+        <img id="mario" src="https://i.ytimg.com/vi/IxxZO_fUNqo/maxresdefault.jpg" alt="" width="150px">
+
+    </div>
+    
+</body>
+<script>
+    let caixa = document.getElementById('caixa')
+    console.log(caixa)
+    caixa.style.backgroundColor = 'red'
+    caixa.style.color = "white"
+    caixa.style.fontSize = "15pt"
+    caixa.style.fontFamily = "verdana"
+    caixa.style.display = ""
+
+    function adicionaParagrafo(){
+    let lista = document.getElementById('lista')
+    let paragrafo = document.createElement('p')
+    paragrafo.innerHTML = "Megaman"
+    
+    //ela adiciona um elemento no final do elemento pai
+    // lista.appendChild(paragrafo)
+
+    //ADICIONA UM ELEMENTO ANTES DO OUTRO
+
+    // lista.insertBefore(paragrafo,lista.firstChild)
+    // lista.insertBefore(paragrafo,document.getElementById('mario'))
+
+
+    //REMOVER UM ELEMENTO
+    // lista.removeChild(document.getElementById('mario'))
+
+    //  SUBSTITUIR UM ELEMENTO
+    //.replaceChild(novo, anterior)
+    // lista.replaceChild(paragrafo, document.getElementById('alladin'))
+
+    }
+
+    //Objetos
+    //atributo -> porta, cor, modelo
+    //métodos -> acelerar, frear
+
+    let carros = [{
+        porta: 4,
+        cor: 'preto',
+        modelo: 'Impala 67',
+        imagem:'https://www.webmotors.com.br/wp-content/uploads/2020/10/13230616/Impala-de-Dean-%C3%A9-impec%C3%A1vel.jpg',
+        acelerar: function(){
+            alert('Acelerando')
+        },
+        frear: function(){
+            alert('Freando')
+        }
+    },{
+        porta: 4,
+        cor: 'vermelho',
+        modelo: 'Maverick',
+        imagem:'https://www.performancev8.com/wp-content/uploads/2017/07/maverick-vermelho-performancev8-5.jpg',
+        acelerar: function(){
+            alert('Acelerando')
+        },
+        frear: function(){
+            alert('Freando')
+        }}
+    
+    ] 
+
+
+    console.log(carros[0].modelo)
+
+    carros[0].acelerar();
+
+
+
+</script>
+</html>

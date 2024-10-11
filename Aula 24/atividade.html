@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        form{
+            text-align: center;
+            background-color: gray;
+            width: 300px;
+            height: 400px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Cadastre seu veículo</h3><br>
+        <label for="modelo"> Digite o modelo </label><br>
+        <input placeholder="Modelo" type="text" name="modelo1" id="modelo"><br><br>
+        <label  for="ano"> Digite o ano </label><br>
+        <input placeholder="Ano" type="text" name="ano1" id="ano"><br><br>
+        <label for="cor"> Digite a cor </label><br>
+        <input placeholder="Cor" type="text" name="cor1" id="cor"><br><br>
+        <label for="imagem"> Digite o link da imagem </label><br>
+        <input placeholder="Link imagem" type="text" name="imagem1" id="imagem"><br><br>
+
+        <button type="button" onclick="cadastrar()">Cadastrar agora</button>
+    </form>
+    <hr>
+
+    <form id="campoBuscar">
+    <h3>Pesquise seu veículo</h3><br>
+    <input type="text" id="modeloBuscado">
+    <button type="button" onclick="buscar()">Pesquisar</button>
+    </form>
+
+</body>
+
+<script>
+    
+    let carros = [
+        {modelo: 'Gol',
+            ano: 2001,
+            cor: 'Preto',
+            imagem: 'imagemDigitado'
+        },{
+            modelo: 'Celta',
+            ano: 2006,
+            cor: 'Verde',
+            imagem: 'imagemDigitado'
+        }
+    ]
+
+    function cadastrar(){
+        
+        let modeloDigitado = document.getElementById('modelo').value
+        let anoDigitado = document.getElementById('ano').value
+        let corDigitado = document.getElementById('cor').value
+        let imagemDigitado = document.getElementById('imagem').value
+        
+
+        let carro = {
+            modelo: modeloDigitado,
+            ano: anoDigitado,
+            cor: corDigitado,
+            imagem: imagemDigitado
+        }
+
+        carros.push(carro)
+        console.log(carros)
+    }
+
+    function buscar(){
+        let busca = document.getElementById('modeloBuscado').value
+        console.log(parseInt(busca))
+        let titulo = document.createElement('h1')
+        titulo.innerHTML = carros[busca].modelo
+        let divResultado = document.getElementById('campoBuscar')
+        console.log(divResultado)
+        divResultado.appendChild(titulo)
+
+    }
+    
+
+    
+
+
+</script>
+
+</html>
