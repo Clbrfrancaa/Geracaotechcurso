@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <script>
+
+        fetch('https://fakestoreapi.com/products/')
+            .then(resposta => resposta.json())
+            .then(dados => {
+                //Seu código vai aqui!!!
+                resp = dados.resposta
+                console.log(dados[0])
+            })
+            .catch(
+                erro => {
+                    console.log("Ocorreu um erro")
+                    //Seu código vai aqui!!!
+                }
+            )
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

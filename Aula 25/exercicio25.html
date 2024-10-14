@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+    
+</head>
+<body>
+    <h1>Lista de Carros</h1>
+    <button id="listarCarros" onclick="listar()">Listar Carros</button>
+    <button id="mostrarModelos" onclick="mostrar()">Mostrar Modelos</button>
+    <button id="filtrarCarros" onclick="filtrar()">Filtrar Carros Caros</button>
+    <button id="calcularPrecoTotal" onclick="calcular()">Calcular Preço Total</button>
+    
+    <ul id="resultado"></ul>
+
+</body>
+<script>
+
+    let carros = [
+        { modelo: 'Fusca', preco: 15000, ano: 1972 },
+        { modelo: 'Civic', preco: 80000, ano: 2020 },
+        { modelo: 'Fiesta', preco: 45000, ano: 2015 },
+        { modelo: 'Camaro', preco: 300000, ano: 2021 },
+        { modelo: 'Gol', preco: 30000, ano: 2010 },
+        { modelo: 'Corolla', preco: 70000, ano: 2019 }
+    ];
+
+    function listar(){
+        carros.forEach((carro) => {
+            console.log(carro.modelo)
+
+             }
+         )
+    }
+
+    function mostrar(){
+
+        let modelo = carros.map(
+            carro => {
+                return carro.modelo
+           }
+        )
+        console.log(modelo)
+
+    let lista = document.getElementById("resultado");
+    
+
+    modelo.forEach((modelo) => {
+        let item = document.createElement("li")
+        item.innerHTML = `${modelo}`
+        lista.appendChild(item)
+        }
+      )
+    }
+
+
+    function filtrar(){
+
+
+
+        
+    }
+
+
+
+    </script>
+
+</html>
