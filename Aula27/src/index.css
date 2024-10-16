@@ -1,0 +1,24 @@
+/*CSS GLOBAL*/
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(219, 219, 219);
+  margin-bottom: 500px;
+
+}
+
+h1{
+  color: blue;
+
+}
+
+.paragrafo1{
+
+  background-color: black;
+  color: white;
+
+}
+
+p{
+  color: rgb(68, 0, 255);
+}
