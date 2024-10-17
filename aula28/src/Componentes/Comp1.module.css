@@ -1,0 +1,12 @@
+.lista {
+    border: solid 2px green;
+    list-style: none;
+    text-align: center;
+
+}
+
+.fotoTrocada {
+    display: flex;
+    justify-content: center;
+    
+}

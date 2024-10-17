@@ -1,0 +1,22 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+    color: brown;
+}
+
+
+p {
+    text-align: center;
+    padding: 0px 100px 20px 100px;
+
+}
